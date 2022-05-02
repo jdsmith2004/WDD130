@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+}
+
+#linksBar {
+    color: aliceblue;
+    background-color: solid aliceblue;
+    border: 4px ;
+}

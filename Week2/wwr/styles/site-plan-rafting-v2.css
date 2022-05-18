@@ -274,3 +274,8 @@ footer {
 hr {
   margin-top: 100px;
 }
+
+.home-title {
+  font-style: italic;
+  font-size: 40px;
+}

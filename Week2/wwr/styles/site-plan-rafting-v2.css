@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=PT+Serif&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Tapestry&display=swap');
+
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #46b1c9;
@@ -278,4 +281,14 @@ hr {
 .home-title {
   font-style: italic;
   font-size: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-black);
 }

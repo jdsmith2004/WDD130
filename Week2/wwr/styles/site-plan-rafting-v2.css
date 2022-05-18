@@ -29,6 +29,7 @@
 
 nav a {
   text-align: left;
+  font-size: 20px;
 }
 
 #hero-msg h1,
@@ -162,6 +163,10 @@ nav a {
 nav {
   text-align: center;
   overflow: hidden;
+}
+
+.icon {
+  padding-top: 10px;
 }
 
 .book, .join {

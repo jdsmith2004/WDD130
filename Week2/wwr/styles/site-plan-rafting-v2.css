@@ -350,7 +350,7 @@ nav {
 }
 #background {
   grid-column: 1/11;
-  grid-row: 5/11;
+  grid-row: 4/9;
   background-color: black;
 }
 #mountains {

@@ -320,6 +320,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   margin-top: -100px;
+  color: #ac4a07;
 }
 #hero-box {
   grid-column: 1/4;

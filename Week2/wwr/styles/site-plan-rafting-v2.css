@@ -472,12 +472,12 @@ footer {
   z-index: 1;
   padding-top: 45px;
 }
-#faqText h2 {
+/* #faqText h2 {
   color: white;
 }
 #faqText h4 {
   color: white;
-}
+} */
 
 .faqGrid {
   padding: 30px 7%;

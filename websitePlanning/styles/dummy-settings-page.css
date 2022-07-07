@@ -1,14 +1,15 @@
-* {box-sizing: border-box}
+* {
+  border: 10px solid dotted red;
+}
 
 /* Style the tab */
 .tab {
   float: left;
-  border: 1px solid #ccc;
+  border: 1px solid blue;
   background-color: #f1f1f1;
   width: 30%;
-  height: 300px;
+  height: 100%;
 }
-
 /* Style the buttons that are used to open the tab content */
 .tab button {
   display: block;
@@ -36,9 +37,19 @@
 /* Style the tab content */
 .tabcontent {
   float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
+  /* padding: 10px 12px; */
+  border: 1px solid red;
   width: 70%;
   border-left: none;
-  height: 300px;
+  height: 100%;
+  display: none;
+}
+.settingsMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  border: 1px solid green;
+  padding: 0px;
 }

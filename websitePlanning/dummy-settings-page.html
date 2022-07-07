@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settings</title>
 
-    <link rel="stylesheet" href="styles/bootstrap.css">
-    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
-    <script defer src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="styles/dummy-settings-page.css"
-    />
-    <script
-      type="text/javascript"
-      src="scripts/dummy-settings-page.js"
-    ></script>
-  </head>
-  <body>
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'London')">
-        London
-      </button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings</title>
+
+  <link rel="stylesheet" href="styles/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+    rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="styles/dummy-settings-page.css" />
+  <script type="text/javascript" src="scripts/dummy-settings-page.js"></script>
+</head>
+
+<body>
+  <div class="settingsMenu container">
+    <div class="sectionLabels">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'accountInfo')">
+          Account Details
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Theme')">
+          Theme
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Backgrounds')">
+          Backgrounds
+        </button>
+      </div>
     </div>
+    
+    <div class="sectionContent">
+      <div id="accountInfo" class="tabcontent">
+        <h3>Name:
+          <p>UsersName</p>
+        </h3>
+      </div>
+      <div id="Theme" class="tabcontent">
+        <h3>Theme</h3>
+        <p>Theme is the capital of France.</p>
+      </div>
+      <div id="Backgrounds" class="tabcontent">
+        <h3>Backgrounds</h3>
+        <div class="row">
+          <div class="col col-lg-3 col-md-2">
+            <img class="img-fluid" src="images/settings/settings.jpg" alt="pink clouds">
+          </div>
+          <div class="col col-lg-3 col-md-2">
+            <img class="img-fluid" src="images/settings/settings.jpg" alt="pink clouds">
+          </div>
+          <div class="col col-lg-3 col-md-2">
+            <img class="img-fluid" src="images/settings/settings.jpg" alt="pink clouds">
+          </div>
+          <div class="col col-lg-3 col-md-2">
+            <img class="img-fluid" src="images/settings/settings.jpg" alt="pink clouds">
+          </div>
+        </div>
 
-    <div id="London" class="tabcontent">
-      <h3>Dark Mode</h3>
-      <p>London is the capital city of England.</p>
+        <!-- Default switch -->
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="customSwitches">
+          <label class="custom-control-label" for="customSwitches">Toggle this switch element</label>
+          <p>Toggle</p>
+          <input type="checkbox" checked data-toggle="toggle" data-onstyle="dark" data-offstyle="light"
+            data-style="border">
+          <input type="checkbox" checked data-toggle="toggle" data-size="lg">
+          <input type="checkbox" checked data-toggle="toggle">
+          <input type="checkbox" checked data-toggle="toggle" data-size="sm">
+          <input type="checkbox" checked data-toggle="toggle" data-size="xs">
+          <button type="button" class="btn btn-primary">Primary</button>
+        </div>
+      </div>
     </div>
+  </div>
+</body>
 
-    <div id="Paris" class="tabcontent">
-      <h3>Paris</h3>
-      <p>Paris is the capital of France.</p>
-    </div>
-
-    <div id="Tokyo" class="tabcontent">
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
-    <!-- Default switch -->
-<div class="custom-control custom-switch">
-    <input type="checkbox" class="custom-control-input" id="customSwitches">
-    <label class="custom-control-label" for="customSwitches">Toggle this switch element</label>
-    <p>Toggle</p>
-    <input type="checkbox" checked data-toggle="toggle" data-onstyle="dark" data-offstyle="light" data-style="border">
-    <input type="checkbox" checked data-toggle="toggle" data-size="lg">
-<input type="checkbox" checked data-toggle="toggle">
-<input type="checkbox" checked data-toggle="toggle" data-size="sm">
-<input type="checkbox" checked data-toggle="toggle" data-size="xs">
-<button type="button" class="btn btn-primary">Primary</button>
-</div>
-  </body>
-</html> 
+</html>
